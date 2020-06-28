@@ -1,0 +1,318 @@
+.page-header__block {
+    background-color: $menu-green;
+}
+.page-header__tuggle {
+    position: relative;
+    padding: 25px;
+    margin: 0 0 0 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    &::before {
+        content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 -8px #fff, 0 8px #fff;
+    box-shadow: 0 -8px #fff, 0 8px #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 -8px #fff, 0 8px #fff;
+        box-shadow: 0 -8px #fff, 0 8px #fff;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+}
+.page-header__tuggle--open::before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.page-header__tuggle--open::after {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.page-header__main-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// .page-header__logo {
+//     margin-right: 25px;
+// }
+.main-menu {
+    display: none;
+    &--open {
+        display: block;
+    }
+}
+.page-header__desktop-icon-block {
+    display: none;
+}
+.page-header__basket-desktop {
+    display: none;
+}
+.page-header__tel {
+    color: $white;
+    font-weight: normal;
+    line-height: normal;
+}
+.page-header__basket-block {
+    position: relative;
+}
+.page-header__basket-number {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 13px;
+    top: -5px;
+    line-height: 21px;
+}
+.page-header .recall, .page-header__purchase, .page-header__friend {
+    display: none;
+}
+.desktop-second-menu {
+    display: none;
+    overflow: visible;
+}
+.site-list__item {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 0;   
+}
+.site-list__link {
+    color: #fff;
+    display: block;
+    &:hover {
+        color: #4c6d38;
+    text-decoration: none;
+    transition-duration: .5s;  
+    }
+}
+@media (min-width:$desktop) {
+    .page-header__top-block {
+        display: grid;
+        margin-left: 15%;  
+        position: relative;     
+    }
+    .page-header__block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .page-header__position-block {
+        position: relative;
+    z-index: 10;
+    overflow: visible;
+    }
+    .page-header__tuggle {
+        display: none;
+    }
+    .main-menu {
+        display: block;
+    }
+    .site-list {
+        display: flex;        
+        width: 750px;
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+    .site-list a {
+        font-size:  12px;
+        text-transform: none;
+    }
+    .page-header__main-block {
+        grid-row: 2;
+        justify-content: baseline;
+        margin-top: 10px;
+    }   
+    .desktop-second-menu {
+        padding-top: 40px;
+    }
+    .page-header__logo {
+        position: absolute;
+        left: -145px;
+        top: 22px;
+    }
+    .page-header__desktop-icon-block {
+        display: block;
+        display: flex;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .page-header__basket-block {
+        display: none;
+    }
+    .basket:hover {
+        color: #4c6d38;
+        transition-duration: .5s;    
+    }
+    #lupa {
+        display: none;
+    }
+    .site-list__item {
+        padding: 10px 0;
+    margin-right: 50px;
+    }
+    .page-header__main-menu-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .page-header__lang-block {
+        font-size: 11px;
+    }
+    .page-header .recall, .page-header__purchase, .page-header__friend {
+        margin-left: 0;
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 12px;    
+        text-decoration: underline;   
+    }
+    .page-header__purchase::before, .page-header__friend::before {
+        content: "";        
+        position: absolute;
+        background-color: transparent;
+        background: url(../img/rastr/quest-mark-icon.png) no-repeat center;
+        width: 20px;
+        height: 20px;
+        right: -21px;
+        top: -2px;
+    }          
+    .page-header__basket-desktop {       
+        color: white;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-right: 10px;
+        & a {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    } 
+    .page-header__tel {
+        font-size: 26px;   
+        margin-left: -32px;    
+        &:hover {
+            color: #4c6d38;
+            transition-duration: .5s;    
+        }
+    }
+    .desktop-second-menu {
+        display: block;
+    } 
+    .page-header__recall-basket-block {
+        display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    width: 75%;
+    margin-top: 13px;
+    margin-left: 40px;
+    }
+    .page-header__friend {
+        margin-left: -30px;
+    }
+    .desktop-second-menu__link {
+        font-size: 24px;
+        color: white;
+        position: relative;
+    }
+    .desktop-second-menu__list {
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        position: relative;
+    }
+    .menu-catalog {
+        position: absolute;
+    left: 0;
+    top: 22px;
+    display: none;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 12px;
+    padding: 25px 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .menu-catalog__item a {
+        display: grid;
+    }
+    .menu-catalog__label {
+        font-size: 14px;
+        color: $black;
+    }
+    .desktop-second-menu__item:hover .menu-catalog {
+        display: grid;
+    }
+    .desktop-second-menu__link:hover::before {
+        content: "";
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        display: block;
+        margin-top: -4px;
+        width: 14px;
+        height: 8px;
+        background: url(../img/rastr/black_arrow.png);
+    }
+    .desktop-second-menu__item:hover {
+        border-bottom: 2px solid $black;
+    }
+}
+@media (max-width: 1200px) and (min-width: 900px) {
+    .page-header__desktop-icon-block {
+        display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    }
+}
+
+    
+

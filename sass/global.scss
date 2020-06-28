@@ -1,0 +1,90 @@
+$desktop: 900px;
+$desktop-width: 1140px;
+$tablet: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$btn-green: #6ca200;
+$green-hvr: #5eaa2f;
+$menu-green: #95bf41;
+$grey-hvr: #ebebeb;
+$grey-background: #eaeaea;
+$grey-border: #cdcdcd;
+$blue: #99e8d3;
+$black: #111111;
+$light-black: #444444;
+$white: #ffffff;
+$purple: #acbff6;
+$programm-green: #95bf41;
+$salate: #b7e899;
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: "Muller", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $black;
+    text-align: center;
+    background-color: #ffffff;
+  }   
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .visual-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visual-hidden,
+  input[type="radio"].visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  input {
+    border: 1px solid $grey-border;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;    
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;  
+}
+  .wrapper {     
+    padding: 0 15px;   
+    margin: auto;    
+    overflow: hidden;
+    max-width: 100%;
+}
+
+@media (min-width:$desktop) {
+    body {
+    font-size: 16px;
+  }
+    .wrapper {    
+    width: $desktop-width;
+    padding: 0;
+  }  
+}

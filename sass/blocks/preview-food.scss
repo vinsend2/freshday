@@ -1,0 +1,49 @@
+.preview-food__item-block {
+    display: grid;
+    
+}
+.preview-food__item { 
+    width: 40%;
+    margin-top: 20px;
+}
+.preview-food__list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+.preview-food__shadow {
+     box-shadow: -16px 0 20px -23px rgba(0, 0, 0, .8);
+}
+.preview-food__p1 {
+     margin-bottom: 0;
+}
+.preview-food__p2 {
+    margin: 0;
+}
+.preview-food__stat {
+    margin-bottom: 0;
+}
+.preview-food__price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.preview-food__order-btn {
+    margin-left: -4px;
+    position: relative;
+    padding: 8px 0;
+    padding-left: 10px;
+    letter-spacing: 4px;
+    &::before {
+        content: "+";
+        position: absolute;        
+        left: 7px; 
+    }
+}
+@media (min-width:$desktop) {
+    .preview-food {
+        display:none;
+    }
+}

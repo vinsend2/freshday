@@ -1,0 +1,28 @@
+.slider-menu__menu-block {
+    margin-top: 15px;
+}
+.second-menu__list {
+    display: flex;
+    background-color: $btn-green;
+}
+.second-menu__link {
+    color: white;
+    display: block;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+.second-menu__item {    
+    width: 100%;
+    background-image: url(../img/vector/second-menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+@media (min-width:$desktop) {
+    .slider__img {
+        height: 700px;
+        overflow: hidden;
+    }
+    .slider-menu__menu-block {
+        display: none;
+    }
+}

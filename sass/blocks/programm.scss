@@ -1,0 +1,89 @@
+.programm select {
+    background-color: #ededed;
+    font-family: inherit;
+    border: none;
+    padding: 12px;   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    &::before {
+        content: ">";
+  display: inline-block;
+  background: white;
+  position: absolute;
+  right: -5px;
+  top: 2px;
+  z-index: 2;
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  border: 2px solid #ddd;
+  transform: rotate(90deg);
+  cursor: pointer;
+    }
+}
+.programm__btn-block {
+    display: none;
+}
+@media (min-width:$desktop)  {
+    .programm__btn-wrapper {
+        background-color: $programm-green;  
+        border-bottom: 7px solid #93a5dd;  
+        margin-bottom: 40px;    
+        & select {
+            display: none;
+        }
+    }
+    .programm__h2 {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .programm__btn-block {
+        display: flex;
+        justify-content: space-between;
+        overflow: visible;
+    }
+    .programm__btn {
+        width: 50%;
+        height: 520px;
+        font-size: 31px;
+        color: $black;
+        font-family: "Muller", "Arial", sans-serif;
+        font-weight: 500;
+        padding-top: 350px;
+        text-decoration: underline;
+        border: none;
+        box-shadow: 2.5px 4.33px 49px 0px rgba(64, 79, 125, 0.39); 
+        outline: none;
+        cursor: pointer;
+        &:active {
+            outline: none;            
+        }         
+    }
+    .programm__btn--active {
+        box-shadow: none;
+        color: white;
+        text-decoration: none;
+    }
+    .programm__btn--slim {        
+        background: #71c1ff url(../img/rastr/programm-slim.png) no-repeat 0px -94px;
+        transition: background 3s ease;
+        &:hover {
+            background-position: 90% -10%;
+        }
+    }
+    .programm__btn--health {
+        background-color: $programm-green;
+                
+        background: url(../img/rastr/programm-health-ball.png) no-repeat center 102px,
+                    url(../img/rastr/programm-health-bg.jpg) no-repeat 0px -14px;
+        background-size: 60%, 100%;
+        transition: background 3s ease;
+        &:hover {
+            background-size: 80%, 100%;
+        }
+                   
+    }
+}

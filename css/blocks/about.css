@@ -1,0 +1,29 @@
+.about {
+  background-color: #f0f2f6;
+  background-image: url(../img/rastr/bg-about-mobile.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 40px; }
+
+.about__h2 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-top: 0;
+  padding-top: 40px; }
+
+.about p {
+  text-align: left;
+  color: black;
+  font-weight: 500;
+  padding: 0px 30px; }
+
+.about__btn {
+  background-color: transparent;
+  border: 2px solid #005826;
+  width: 145px;
+  color: #005826;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px 0; }

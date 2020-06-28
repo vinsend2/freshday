@@ -1,0 +1,14 @@
+.btn {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    background-color: $btn-green;
+    border: none;  
+    cursor: pointer;
+    &:hover {
+        background-color: #5eaa2f;
+    }
+}

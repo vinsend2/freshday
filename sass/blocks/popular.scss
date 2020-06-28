@@ -1,0 +1,89 @@
+.popular__h2, .programm__h2, .comments__h2, .public-content__h2, .social__h2 {   
+    font-size: 18px;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.popular__item-block, .programm__item-block {
+    display: grid;
+    padding-bottom: 10px;
+    
+}
+.popular__item, .programm__item {     
+    margin-top: 20px;
+    text-align: left;    
+}
+.popular__shadow, .programm__shadow {
+     box-shadow: -16px 0 20px -23px rgba(0, 0, 0, .8);
+}
+.popular__p1, .programm__p1 {
+     margin-bottom: 0;
+}
+.popular__p2, .programms__p2 {
+    margin: 0;
+}
+.ppopular__stat, .programm__stat {
+    margin-bottom: 0;
+}
+.popular__price, .programm__stat {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.popular__order-btn, .programm__stat {
+    margin-left: -4px;
+    position: relative;
+    padding: 8px 0;
+    padding-left: 10px;
+    letter-spacing: 4px;
+    &::before {
+        content: "+";
+        position: absolute;        
+        left: 7px; 
+    }
+}
+@media (min-width:$desktop) {
+    .popular__item-block {
+        box-shadow: -16px 0 20px -29px rgba(0, 0, 0, 0.8);
+    }
+    .popular__shadow {
+        box-shadow: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        overflow: hidden;
+    }
+    .popular__order-btn {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 11px;
+        width: 146px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px 0;
+        &::before {
+            left: 21px;
+        }
+    }
+    .popular__price {
+        margin: auto 0;
+    }
+    .popular__h2, .programm__h2, .comments__h2, .about__h2, .public-content__h2, .social__h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .popular__p1, .popular__p2, .popular__stat {
+        padding-left: 25px;
+    } 
+    .popular__stat {
+        font-size: 12px;
+    }
+    .popular__img {
+        -webkit-transition: all 1s ease-out;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    }      
+}

@@ -1,0 +1,76 @@
+.about {
+    background-color: #f0f2f6;
+    background-image: url(../img/rastr/bg-about-mobile.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+.about__dish-clock-block {
+    display: none;
+}
+.about__h2 {
+    font-size: 18px;    
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-top: 0;
+    padding-top: 40px;
+}
+.about p {    
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    padding: 0px 30px;
+}
+.about__btn {
+    background-color: transparent;
+    border: 2px solid #005826;
+    width: 145px;
+    color: #005826;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px 0;
+}
+@media (min-width: 768px) and (max-width: 1000px) {    
+    .clock {
+        display: none;
+    }
+}
+
+@media (min-width:$desktop) {
+    .about {
+    background: 
+                url(../img/rastr/about-bg-left.png) no-repeat left center,
+                url(../img/rastr/about-bg-right.png) no-repeat right center,
+                url(../img/rastr/about-bg.jpg) no-repeat center;
+       padding-bottom: 100px;
+       max-height: 700px;
+       position: relative;
+    }
+    .about__h2 {
+        padding-top: 275px;
+    }
+    .about p {
+        padding: 0px 30%;
+        font-size: 18px;
+        margin-top: 55px;
+        margin-bottom: 45px;
+    }
+    .about__dish-clock-block {
+        display: flex;
+        position: absolute;
+        top: -236px;   
+        left: 8%;  
+        
+    }
+    .about__dish-cloak-wrapper {
+        position: relative;
+        overflow: visible;       
+        
+    }
+    .dish--transform {
+        transition: all 3s ease;
+    transform: rotate(90deg);
+    }
+   
+}

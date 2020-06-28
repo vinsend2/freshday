@@ -1,0 +1,43 @@
+.recall-block {
+    display: none;
+    margin-top: 50px;
+}
+@media (min-width:$desktop) {
+    .recall-block {
+    display: flex;
+    background-color: $salate;
+    & p {
+        grid-column: 2;
+        margin-left: -10%;
+    }
+    & h3 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    & input {
+        margin-right: 30px;
+        border: 1px solid #cdcdcd;
+        padding: 10px;
+        font-family: inherit;
+    }
+    }
+    .recall-block__content {
+        padding: 12px 85px 35px 85px;
+    display: grid;
+    text-align: left;
+    align-items: center;
+    }
+    .recall-block__form {
+        display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .form__name, .form__tel {
+        width: 100%;
+    }
+    .form__submit-btn  {
+        width: 60%;
+        padding: 10px 0;
+    }
+    
+}
